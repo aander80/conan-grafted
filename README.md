@@ -6,7 +6,7 @@ the `--dry-run` flag.
 To reproduce the error, clone this repo, then run the following commands:
 
 ```shell
-git fetch ac4e4dc3ca4cb1529f79beaed822a530d9fd500c  # This commit exists in the remote but is not referenced by any branch
+git fetch origin ac4e4dc3ca4cb1529f79beaed822a530d9fd500c  # This commit exists in the remote but is not referenced by any branch
 git checkout ac4e4dc3ca4cb1529f79beaed822a530d9fd500c
 git log  # Run git log to see the commit history
 conan export .  # Export the conanfile to the cache; this will make the current commit grafted
